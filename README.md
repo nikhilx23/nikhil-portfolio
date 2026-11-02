@@ -6,6 +6,8 @@ data pipelines, lakehouse tables and RAG retrieval systems on Azure.
 The site covers my experience at AT&T and IBM, a few projects I've built, and
 the tools I use day to day.
 
+**Live site:** https://abhai-pothuraju.vercel.app
+
 ## What's on the site
 
 - **Experience** with the actual problems I worked on and what changed after

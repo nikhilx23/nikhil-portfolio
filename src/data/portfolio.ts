@@ -638,7 +638,7 @@ export const portfolio = {
     title: 'Abhai Sai Nikhil Pothuraju | AI Data Engineer',
     description: 'Abhai Sai Nikhil Pothuraju is an AI Data Engineer based in Chicago, building reliable pipelines, lakehouses and RAG retrieval systems with Azure, Databricks, PySpark, Snowflake and SQL.',
     // Set after choosing the real production URL. Never invent a canonical URL.
-    siteUrl: null as string | null,
+    siteUrl: 'https://abhai-pothuraju.vercel.app/' as string | null,
     ogImage: '/og-image.png',
     ogImageAlt: 'Abhai Sai Nikhil Pothuraju; AI Data Engineer. Azure, Databricks, PySpark, Snowflake and SQL.',
   },
