@@ -1,0 +1,16 @@
+.project-narrative { margin-block: 1.6rem; }
+.project-narrative h4 { font-size: clamp(1.4rem, 2.3vw, 1.9rem); line-height: 1.25; color: #f0f6f2; margin-bottom: 1rem; }
+.project-narrative p { color: #c8d5ce; line-height: 1.8; }
+.project-chapters { display: flex; flex-wrap: wrap; gap: .5rem; margin: 1.5rem 0 1rem; }
+.project-chapters button { padding: .65rem .8rem; border: 1px solid #486152; border-radius: .65rem; background: #101c16; color: #d7e0da; font-size: .8rem; cursor: pointer; }
+.project-chapters button[aria-pressed=true] { color: #39ff14; border-color: #39ff14; background: #172819; }
+.project-chapter { padding: 1.25rem; border: 1px solid #34513e; border-radius: 1rem; background: linear-gradient(140deg,#11231b,#090f0c); min-height: 23rem; box-shadow: inset 0 1px #ffffff0c, 0 12px 24px #0004; }
+.project-chapter h5 { font-size: 1.15rem; color: #f1f7f3; line-height: 1.5; margin: 0 0 .75rem; }
+.project-flow { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: .6rem; margin-top: 1.5rem; }
+.project-flow li { flex: 1 1 90px; padding: .75rem; border: 1px solid #527862; border-bottom-width: 3px; border-radius: .6rem; font: .72rem/1.6 var(--font-mono); color: #beedcc; background: #101e16; }
+.project-evidence { border-left: 2px solid #39ff14; padding: .4rem 1rem; margin-top: 1.5rem; }
+.project-evidence strong { font: .75rem var(--font-mono); color: #39ff14; }
+.project-evidence p { font-size: .85rem; margin: .5rem 0; }
+.project-narrative details p { padding-top: 1rem; }
+.project-narrative details a { display: inline-block; margin-top: 1rem; text-decoration: underline; }
+@media(max-width:767px) { .project-chapter { min-height: 0; } .project-chapters button { flex: 1; } }

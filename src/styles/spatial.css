@@ -1,0 +1,23 @@
+.portfolio-space{position:relative;isolation:isolate}
+.spatial-background{position:fixed;inset:0;pointer-events:none;z-index:-1;overflow:hidden}
+.spatial-background>div:not(.spatial-static){position:absolute!important;inset:0}
+.spatial-static{position:absolute;inset:0;background:radial-gradient(ellipse at 0 35%,#183d292d,transparent 40%),radial-gradient(ellipse at 100% 65%,#34205335,transparent 45%),radial-gradient(ellipse at 0 95%,#12375935,transparent 35%)}
+.content-section{position:relative;perspective:1600px}
+.section-heading h2{text-shadow:0 2px 0 #172c24,0 12px 24px #0008}
+.stats-grid,.education-entry,.skill-group,.mission,.investigator-story{box-shadow:0 2px 0 #d7e0da12 inset,0 14px 0 -9px #040907,0 28px 55px -20px #000c}
+.stat,.education-entry,.skill-group,.contact-links a,.mission-selector button{transition:transform .3s ease,box-shadow .3s ease,border-color .3s ease}
+.mission,.investigator-story{position:relative;border-top-color:#c2e7d740}
+.mission::after,.investigator-story::after{content:'';position:absolute;pointer-events:none;inset:0;border-radius:inherit;box-shadow:inset 1px 0 #ffffff0a,inset -1px 0 #ffffff08}
+.case-evidence{box-shadow:12px 15px 0 -7px #050a08,20px 28px 40px #0005;transform:perspective(1000px) rotateY(-3deg)}
+.evidence-node{box-shadow:0 5px 0 -2px #050d09;transform:translateZ(12px)}
+.space-motion-toggle{position:fixed;right:1rem;bottom:1rem;z-index:45;min-height:44px;padding:.65rem 1rem;border:1px solid #a7c4b550;border-radius:30px;background:#080e13f5;color:#d7e0da;font:.65rem/1.7 var(--font-mono);box-shadow:0 5px 24px #0008;cursor:pointer}
+@media(hover:hover) and (min-width:768px) and (prefers-reduced-motion:no-preference){
+ .portfolio-space[data-motion-paused=false] .stat:hover,.portfolio-space[data-motion-paused=false] .education-entry:hover,.portfolio-space[data-motion-paused=false] .skill-group:hover{transform:perspective(1000px) translateY(-6px) rotateX(2deg) rotateY(-2deg);box-shadow:0 22px 40px #0009}
+ .portfolio-space[data-motion-paused=false] .mission-selector button:hover,.portfolio-space[data-motion-paused=false] .contact-links a:hover{transform:perspective(700px) translateY(-4px) rotateX(4deg)}
+}
+.portfolio-space[data-motion-paused=true] .portrait-orbit{animation-play-state:paused}
+.skill-group{padding:1.5rem;border:1px solid #d7e0da22;border-radius:10px;background:linear-gradient(135deg,#0c1815eb,#080e14ed);margin-bottom:1.5rem}
+[data-theme="1"] .static-lab{filter:hue-rotate(135deg)}
+[data-theme="2"] .static-lab{filter:hue-rotate(85deg)}
+.mission .button-primary:hover{background:color-mix(in srgb,var(--color-neon) 80%,white);box-shadow:0 0 28px color-mix(in srgb,var(--color-neon) 20%,transparent)}
+@media(max-width:767px),(prefers-reduced-motion:reduce){.case-evidence{transform:none}.space-motion-toggle{font-size:.6rem;right:.6rem;bottom:.6rem}.spatial-background canvas{display:none}}
